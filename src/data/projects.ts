@@ -57,12 +57,12 @@ export const projects: Project[] = [
     id: "vertical-media-feed",
     number: "01",
     title: "Vertical Media Feed",
-    category: "Social / Content",
+    category: "Native Mobile / Media Systems",
     description:
-      "A TikTok-style feed with active-center playback, player pooling, fast-scroll handling, and performance-focused media architecture.",
+      "A vertical media feed with active-center playback, player pooling, fast-scroll handling, and performance-focused media architecture.",
     longDescription:
       "A high-performance vertical media feed built to handle fast scrolling, player reuse, lifecycle cleanup, thumbnail handoff, and active-center playback. The focus is not just UI polish, but the systems work required to make video feel instant and stable on real mobile devices.",
-    tech: ["Swift", "Kotlin", "Supabase", "PostgreSQL"],
+    tech: ["Kotlin"],
     imageAlt: "Vertical media feed project preview",
     imagePlaceholder: "Media Feed",
     status: "Case Study",
