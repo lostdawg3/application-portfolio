@@ -7,7 +7,7 @@ export function Footer() {
 
             <div className="flex items-center gap-5">
                 <a 
-                    href="#" 
+                    href="https://github.com/lostdawg3" 
                     className="text-sm font-medium transition hover:text-white"
                      aria-label="Github"
                 >
@@ -15,7 +15,7 @@ export function Footer() {
                 </a>
 
                 <a
-                    href="#"
+                    href="https://www.linkedin.com/in/greg-w-4ba12449/"
                     className="text-sm font-medium transition hover:text-white"
                     aria-label="LinkedIn"
                 >

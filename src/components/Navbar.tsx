@@ -39,7 +39,7 @@ export function Navbar() {
                     className="hidden items-center gap-2 rounded-xl border border-blue-500/60 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500/10 md:flex"
                 >
                     <Download size={16} />
-                    Download Résumé
+                    Request Resume
                 </a>
             </div>
         </header>
