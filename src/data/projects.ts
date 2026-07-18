@@ -1,55 +1,3 @@
-// import type { Project } from "@/types/project";
-
-// export const projects: Project[] = [
-//     {
-//         id: "vertical-media-feed",
-//         number: "01",
-//         title: "Vertical Media Feed",
-//         category: "Social / Content",
-//         description:
-//             "A social media feed with active-center playback, player pooling, fast-scroll handling, and performance-focused media architecture.",
-//         tech: ["Swift", "Kotlin", "Supabase", "PostgreSQL"],
-//         imageAlt: "Vertical media feed project preview",
-//         imagePlaceholder: "Media Feed",
-//     },
-//     {
-//         id: "turn-request-flow",
-//         number: "02",
-//         title: "Turn",
-//         category: "Productivity / Ops",
-//         description:
-//             "A realtime request lifecycle demo for profile discovery, pending states, editing, withdrawing, and backend-connected interactions.",
-//         tech: [""],
-//         imageAlt: "Turn request flow project preview",
-//         imagePlaceholder: "Request Flow",
-//     },
-//     {
-//         id: "cityscene",
-//         number: "03",
-//         title: "Event Location",
-//         category: "Lifestyle",
-//         description: 
-//             "A location event social media with realtime status, profiles, media, and events.",
-//         tech: ["Swift", "Kotlin", "Supabase", "Maps"],
-//         imageAlt: "Event social media",
-//         imagePlaceholder: "Events",
-//     },
-//     {
-//         id: "cigar-scanner",
-//         number: "04",
-//         title: "Cigar Scanner",
-//         category: "Object Dectection",
-//         description:
-//             "A scanner concept for cigar band recognition, collection tracking, quality scoring, and personal humidor insights.",
-//         tech: ["React Native", "Typescript", "Python", "Vision", "Swift", "Kotlin"],
-//         imageAlt: "Cigar scanner project preview",
-//         imagePlaceholder: "Cigar Scanner"
-//     }
-// ]
-
-
-
-
 import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
@@ -57,142 +5,154 @@ export const projects: Project[] = [
     id: "vertical-media-feed",
     number: "01",
     title: "Vertical Media Feed",
-    category: "Social / Content",
+    category: "Native Android / Media Systems",
     description:
-      "A TikTok-style feed with active-center playback, player pooling, fast-scroll handling, and performance-focused media architecture.",
+      "A Kotlin-based Android media feed system focused on active-center playback, player pooling, fast-scroll handling, and performance-focused media architecture.",
     longDescription:
-      "A high-performance vertical media feed built to handle fast scrolling, player reuse, lifecycle cleanup, thumbnail handoff, and active-center playback. The focus is not just UI polish, but the systems work required to make video feel instant and stable on real mobile devices.",
-    tech: ["Swift", "Kotlin", "Supabase", "PostgreSQL"],
+      "A high-performance Android vertical media feed built to handle fast scrolling, player reuse, lifecycle cleanup, thumbnail handoff, active-center playback, and smooth surface transitions. The focus is not cloning a social app, but solving the native media systems work required to make video feel stable, responsive, and reliable on real devices.",
+    tech: ["Kotlin", "Android", "Media3", "Jetpack Compose", "Perfetto"],
     imageAlt: "Vertical media feed project preview",
     imagePlaceholder: "Media Feed",
     status: "Case Study",
     isPrivate: false,
     screens: [
       {
-        id: "feed-home",
-        title: "Active Feed",
-        subtitle: "Center video owns playback while adjacent cells stay prepared.",
+        id: "active-center-playback",
+        title: "Active-Center Playback",
+        subtitle:
+          "The centered item owns playback while nearby cells stay prepared for smooth transitions.",
       },
       {
-        id: "player-pool",
-        title: "Player Pool",
-        subtitle: "Reusable players reduce churn during fast scroll sessions.",
+        id: "player-pooling",
+        title: "Player Pooling",
+        subtitle:
+          "Reusable playback resources reduce churn, allocation pressure, and scroll-time instability.",
       },
       {
-        id: "scroll-policy",
-        title: "Scroll Policy",
-        subtitle: "Velocity-aware logic avoids attaching too aggressively.",
+        id: "surface-coordination",
+        title: "Surface Coordination",
+        subtitle:
+          "Manual surface, thumbnail, and player handoff logic helps reduce flicker and visual stalls.",
       },
       {
-        id: "performance",
-        title: "Performance",
-        subtitle: "Designed around memory pressure, lifecycle, and smooth handoff.",
+        id: "perfetto-analysis",
+        title: "Perfetto Analysis",
+        subtitle:
+          "Profiling is used to inspect frame timing, scroll behavior, and performance bottlenecks.",
       },
     ],
     highlights: [
-      "Built active-center playback logic for vertical feeds.",
-      "Designed player and surface reuse strategy for smoother scrolling.",
-      "Handled lifecycle cleanup, memory pressure, and fast-scroll behavior.",
-      "Packaged as a senior-level native mobile performance case study.",
+      "Built active-center playback behavior for a native Android vertical media feed.",
+      "Designed player pooling and surface coordination to reduce churn during fast scrolling.",
+      "Handled thumbnail handoff, lifecycle cleanup, scroll-state coordination, and memory pressure.",
+      "Used Perfetto to reason about performance, frame timing, and scroll behavior.",
     ],
   },
   {
-    id: "turn-request-flow",
+    id: "private-realtime-social-product",
     number: "02",
-    title: "Turn Request Flow",
-    category: "Productivity / Ops",
+    title: "Private Realtime Social Product",
+    category: "Private Product / Realtime Mobile",
     description:
-      "A realtime request lifecycle demo for profile discovery, pending states, editing, withdrawing, and backend-connected interactions.",
+      "An unreleased mobile product focused on contextual discovery, request-based interactions, realtime state, and backend-authoritative architecture.",
     longDescription:
-      "A sanitized React Native and backend-connected request flow inspired by private product work. The demo focuses on request lifecycles, optimistic UI, realtime updates, profile interactions, and backend-authoritative state without exposing the unreleased product's secret UI or business logic.",
-    tech: ["React Native", "TypeScript", "Supabase", "PostgreSQL"],
-    imageAlt: "Turn request flow project preview",
-    imagePlaceholder: "Request Flow",
+      "An unreleased private mobile product. Public details are intentionally sanitized to protect the product name, visual identity, interaction model, and proprietary mechanics. The portfolio version focuses on transferable engineering proof: mobile architecture, profile flows, request lifecycles, realtime updates, backend-authoritative state, privacy-aware access patterns, and iOS/Android implementation planning.",
+    tech: ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose", "Supabase", "PostgreSQL"],
+    imageAlt: "Private realtime social product preview",
+    imagePlaceholder: "Protected Preview",
     status: "Private Product",
     isPrivate: true,
     screens: [
       {
-        id: "profile-discovery",
-        title: "Profile Discovery",
-        subtitle: "Browse nearby or contextual profiles in a protected demo flow.",
+        id: "protected-discovery",
+        title: "Protected Discovery Surface",
+        subtitle:
+          "Public preview intentionally obscures the core visual mechanic and discovery model.",
       },
       {
-        id: "request-composer",
-        title: "Request Composer",
-        subtitle: "Send, edit, or withdraw a request before it is accepted.",
+        id: "profile-interactions",
+        title: "Profile Interaction Flow",
+        subtitle:
+          "Selected implementation concepts can be discussed without exposing the full product loop.",
       },
       {
-        id: "pending-state",
-        title: "Pending State",
-        subtitle: "Client UI reflects backend-authoritative lifecycle changes.",
+        id: "request-lifecycle",
+        title: "Request Lifecycle",
+        subtitle:
+          "Backend-authoritative states support pending, edited, accepted, withdrawn, and expired flows.",
       },
       {
-        id: "activity",
-        title: "Activity",
-        subtitle: "Realtime updates keep request state synchronized.",
+        id: "native-platforms",
+        title: "Native Platform Direction",
+        subtitle:
+          "iOS and Android implementations are planned around shared behavior with native UI patterns.",
       },
     ],
     highlights: [
-      "Modeled request states such as pending, accepted, withdrawn, and expired.",
-      "Designed frontend state around backend-authoritative business rules.",
-      "Used TypeScript models to keep request data predictable.",
-      "Keeps full product visuals and source code private while showing engineering depth.",
+      "Designed mobile architecture for a realtime, backend-connected social product.",
+      "Modeled request and profile interaction states around backend-authoritative business rules.",
+      "Planned iOS and Android behavior while protecting private product visuals and mechanics.",
+      "Public showcase intentionally uses sanitized naming and protected preview language.",
     ],
   },
   {
-    id: "pet-location-tracker",
+    id: "private-city-event-product",
     number: "03",
-    title: "Pet Location Tracker",
-    category: "Lifestyle / IoT",
+    title: "Private City/Event Product",
+    category: "Private Product / Location & Events",
     description:
-      "A location-aware mobile concept with realtime status, geofencing, activity history, and map-based device tracking.",
+      "A private city-focused mobile product involving location-aware events, profiles, media, and contextual discovery.",
     longDescription:
-      "A location-focused mobile prototype that demonstrates realtime status, map-based tracking, safe zones, activity timelines, and device/pet state. This project is designed as a focused proof asset for mobile roles involving location, IoT, maps, presence, and realtime backend systems.",
-    tech: ["Swift", "Kotlin", "Supabase", "Maps"],
-    imageAlt: "Pet location tracker project preview",
-    imagePlaceholder: "Location Tracker",
-    status: "Prototype",
-    isPrivate: false,
+      "A private city and event discovery product. The public portfolio version avoids exposing the product name, full screen designs, unique interaction loops, and proprietary planning details. The safe showcase focuses on selected engineering areas: event discovery, location-aware flows, media presentation, profile-based context, saved activity, and backend-connected mobile architecture.",
+    tech: ["Swift", "Kotlin", "Supabase", "PostgreSQL", "Maps", "Realtime"],
+    imageAlt: "Private city and event product preview",
+    imagePlaceholder: "City / Events",
+    status: "Private Product",
+    isPrivate: true,
     screens: [
       {
-        id: "map",
-        title: "Live Map",
-        subtitle: "Track current location and nearby context.",
+        id: "event-discovery",
+        title: "Event Discovery",
+        subtitle:
+          "Safe preview of city/event discovery without revealing the full product concept.",
       },
       {
-        id: "safe-zone",
-        title: "Safe Zones",
-        subtitle: "Geofence-style boundaries with alert-ready state.",
+        id: "location-context",
+        title: "Location Context",
+        subtitle:
+          "Map and place-based interactions can be shown in abstracted form for hiring proof.",
       },
       {
-        id: "activity",
-        title: "Activity Timeline",
-        subtitle: "Recent movement and status updates in one view.",
+        id: "media-profiles",
+        title: "Media & Profiles",
+        subtitle:
+          "Profile, media, and event context are presented without exposing proprietary visual identity.",
       },
       {
-        id: "device",
-        title: "Device Status",
-        subtitle: "Battery, signal, and last-seen data modeled for mobile UX.",
+        id: "saved-activity",
+        title: "Saved Activity",
+        subtitle:
+          "Selected flows can show saved places, plans, or event activity using sanitized data.",
       },
     ],
     highlights: [
-      "Demonstrates map-first mobile product thinking.",
-      "Models realtime status and activity history.",
-      "Useful for location, family safety, IoT, and presence-based roles.",
-      "Can share public demo without exposing TURN-specific location logic.",
+      "Explores location-aware discovery, events, profiles, and media in a mobile-first product.",
+      "Demonstrates map/event architecture without publishing the unreleased product identity.",
+      "Supports iOS and Android product execution across contextual city experiences.",
+      "Public version should use abstracted, blurred, or sample-data screens only.",
     ],
   },
   {
-    id: "cigar-scanner-ai",
+    id: "cigar-scanner",
     number: "04",
-    title: "Cigar Scanner AI",
-    category: "AI / Vision",
+    title: "Cigar Scanner",
+    category: "AI / Vision / Collection",
     description:
-      "An AI-assisted scanner concept for cigar band recognition, collection tracking, quality scoring, and personal humidor insights.",
+      "A scanner concept for cigar band recognition, collection tracking, quality scoring, and personal humidor insights.",
     longDescription:
-      "A mobile AI/OCR concept focused on scanning cigar bands, identifying likely matches, saving collection history, and presenting structured product insights. This project is useful for showing camera workflows, AI-assisted recognition, data matching, and product thinking around collectors.",
-    tech: ["React Native", "TypeScript", "Python", "Vision"],
-    imageAlt: "Cigar scanner AI project preview",
+      "A mobile scanner concept focused on identifying cigar bands, matching likely products, saving collection history, and presenting structured cigar insights. This project is useful for showing camera workflows, AI-assisted recognition, OCR/object detection direction, data matching, and product thinking around collectors.",
+    tech: ["React Native", "TypeScript", "Python", "Vision", "Swift", "Kotlin"],
+    imageAlt: "Cigar scanner project preview",
     imagePlaceholder: "Cigar Scanner",
     status: "Prototype",
     isPrivate: false,
@@ -200,28 +160,32 @@ export const projects: Project[] = [
       {
         id: "discover",
         title: "Discover",
-        subtitle: "Browse cigar profiles, recommendations, and collection insights.",
+        subtitle:
+          "Browse cigar profiles, recommendations, saved items, and collection insights.",
       },
       {
         id: "scan",
         title: "Scan",
-        subtitle: "Camera-first scanning flow for cigar band recognition.",
+        subtitle:
+          "Camera-first scanning flow for cigar band recognition and metadata extraction.",
       },
       {
         id: "details",
         title: "Details",
-        subtitle: "Display origin, flavor notes, quality score, and metadata.",
+        subtitle:
+          "Display origin, brand, flavor notes, quality score, and structured product data.",
       },
       {
         id: "collection",
         title: "Collection",
-        subtitle: "Save scan history and track a personal humidor.",
+        subtitle:
+          "Save scan history, manage favorites, and track a personal humidor.",
       },
     ],
     highlights: [
-      "Shows AI/OCR product direction without needing full ML infrastructure first.",
-      "Can support Python experience through image-processing utilities.",
-      "Demonstrates camera, recognition, and collection workflows.",
+      "Shows AI/OCR product direction without requiring full ML infrastructure first.",
+      "Can support Python experience through image-processing or recognition utilities.",
+      "Demonstrates camera, recognition, data matching, and collection workflows.",
       "Useful proof for AI-assisted mobile product roles.",
     ],
   },
