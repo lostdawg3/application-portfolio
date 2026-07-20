@@ -148,7 +148,7 @@ export function HeroDevices() {
   return (
     <div
       ref={containerRef}
-      className="relative aspect-[865/595] w-full max-w-[820px]"
+      className="relative aspect-[865/595] w-full max-w-[540px] xl:max-w-[820px]"
       aria-label="Laptop and phone displaying TypeScript code"
     >
       {/* Backdrop light behind the devices — neutral, so the aluminum
