@@ -40,7 +40,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-[1440px] px-6 pt-12 xl:pt-14 pb-16 lg:px-10 lg:py-20 xl:px-12 xl:py-24">
         {/* <div className="grid items-center gap-12 xl:grid-cols-[minmax(0,560px)_minmax(0,700px)] xl:justify-between"> */}
-         <div className="grid items-center gap-8 xl:grid-cols-[minmax(0,540px)_minmax(0,1fr)]">
+         <div className="grid items-center gap-6 lg:grid-cols-[minmax(0,480px)_minmax(0,1fr)] xl:grid-cols-[minmax(0,540px)_minmax(0,1fr)] xl:gap-8">
           {/* Left content */}
           <div className="relative z-10 min-w-0">
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-200">
@@ -49,7 +49,7 @@ export function Hero() {
               Senior Mobile / Product Systems Engineer
             </div>
 
-            <h1 className="max-w-[560px] text-5xl font-bold leading-[1.04] tracking-[-0.04em] text-white sm:text-6xl xl:text-[64px]">
+            <h1 className="max-w-[560px] text-5xl font-bold leading-[1.04] tracking-[-0.04em] text-white sm:text-6xl lg:text-[52px] xl:text-[64px]">
               Building scalable mobile and{" "}
               <span className="text-blue-500">
                 backend-connected products.
@@ -115,7 +115,7 @@ export function Hero() {
           {/* Professional rendered laptop and phone */}
           
 
-          <div className="relative hidden min-h-[510px] items-center justify-end xl:flex">
+          <div className="relative hidden min-h-[400px] items-center justify-end lg:flex xl:min-h-[510px]">
             <HeroDevices />
           </div>
         </div>
